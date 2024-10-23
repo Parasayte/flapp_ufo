@@ -2,9 +2,10 @@ C:\Users\Saad\source\repos\flapp\bin\Debug\flapp.exe.config
 C:\Users\Saad\source\repos\flapp\bin\Debug\flapp.exe
 C:\Users\Saad\source\repos\flapp\bin\Debug\flapp.pdb
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.csproj.AssemblyReference.cache
-C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.Form1.resources
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.Properties.Resources.resources
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.csproj.GenerateResource.cache
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.csproj.CoreCompileInputs.cache
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.exe
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.pdb
+C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.Game.resources
+C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.Menu.resources

@@ -14,16 +14,18 @@ using Timer = System.Timers.Timer;
 
 namespace flapp
 {
-    public partial class Form1 : Form
+    public partial class Game : Form
     {
         private int gravity = 4;
-        private int speed = 6;
+        private int speed = 8;
         private int time;
         private bool jumping,alive=true;
         private int score = 0;
-        public Form1()
+        Menu menu = new Menu();
+        public Game()
         {
-            
+           
+          
             InitializeComponent();
         }
 
@@ -84,10 +86,16 @@ namespace flapp
             Gravity();
             UpColumn(colo,coloCHECKER);
             DownColumn(colo1,coloCHECKER1);
-         
-         if (Crashing(fish,colo)||Crashing(fish,colo1))
-             timer1.Stop(); 
-         time++;
+
+            if (Crashing(fish, colo) || Crashing(fish, colo1))
+            {
+                timer1.Stop();
+                MessageBox.Show("Your score : "+score/2,"Game Over",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+               Hide();
+                menu.Show();
+            }
+
+            time++;
         }
         
 
@@ -118,15 +126,18 @@ namespace flapp
         {
             if (fish.Bounds.IntersectsWith(coloCHECKER.Bounds))
             {
-                score++;
-                
+                score+=1;
+               
             }
-scorelabel.Text = "Score : " + score/3;
+
+           
+scorelabel.Text = "Score : " + score/2;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            Hide();
+            menu.Show();
         }
 
         private void colo_Click(object sender, EventArgs e)
