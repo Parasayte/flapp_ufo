@@ -30,22 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.timer1 = new System.Timers.Timer();
-            this.coloCHECKER = new System.Windows.Forms.PictureBox();
-            this.coloCHECKER1 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.player = new System.Windows.Forms.PictureBox();
-            this.colo1 = new System.Windows.Forms.PictureBox();
             this.colo = new System.Windows.Forms.PictureBox();
             this.scorelabel = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.player = new System.Windows.Forms.PictureBox();
+            this.colo1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coloCHECKER)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coloCHECKER1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colo1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colo)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -54,28 +51,6 @@
             this.timer1.Interval = 16D;
             this.timer1.SynchronizingObject = this;
             this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
-            // 
-            // coloCHECKER
-            // 
-            this.coloCHECKER.BackColor = System.Drawing.Color.Transparent;
-            this.coloCHECKER.InitialImage = null;
-            this.coloCHECKER.Location = new System.Drawing.Point(766, -8);
-            this.coloCHECKER.Name = "coloCHECKER";
-            this.coloCHECKER.Size = new System.Drawing.Size(10, 466);
-            this.coloCHECKER.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.coloCHECKER.TabIndex = 5;
-            this.coloCHECKER.TabStop = false;
-            // 
-            // coloCHECKER1
-            // 
-            this.coloCHECKER1.BackColor = System.Drawing.Color.Transparent;
-            this.coloCHECKER1.InitialImage = null;
-            this.coloCHECKER1.Location = new System.Drawing.Point(397, -8);
-            this.coloCHECKER1.Name = "coloCHECKER1";
-            this.coloCHECKER1.Size = new System.Drawing.Size(10, 463);
-            this.coloCHECKER1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.coloCHECKER1.TabIndex = 17;
-            this.coloCHECKER1.TabStop = false;
             // 
             // button3
             // 
@@ -90,30 +65,6 @@
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Visible = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_2);
-            // 
-            // player
-            // 
-            this.player.BackColor = System.Drawing.Color.Transparent;
-            this.player.Image = ((System.Drawing.Image)(resources.GetObject("player.Image")));
-            this.player.InitialImage = null;
-            this.player.Location = new System.Drawing.Point(36, 184);
-            this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(44, 44);
-            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.player.TabIndex = 22;
-            this.player.TabStop = false;
-            // 
-            // colo1
-            // 
-            this.colo1.BackColor = System.Drawing.Color.Transparent;
-            this.colo1.Image = ((System.Drawing.Image)(resources.GetObject("colo1.Image")));
-            this.colo1.InitialImage = null;
-            this.colo1.Location = new System.Drawing.Point(375, -192);
-            this.colo1.Name = "colo1";
-            this.colo1.Size = new System.Drawing.Size(59, 271);
-            this.colo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.colo1.TabIndex = 23;
-            this.colo1.TabStop = false;
             // 
             // colo
             // 
@@ -172,13 +123,47 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Azonix", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.ForeColor = System.Drawing.Color.Brown;
             this.label1.Location = new System.Drawing.Point(287, 131);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(227, 32);
             this.label1.TabIndex = 26;
             this.label1.Text = "Game Over";
             this.label1.Visible = false;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Arabic Pixel 2", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Gold;
+            this.label2.Location = new System.Drawing.Point(22, 36);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Cool : 0";
+            // 
+            // player
+            // 
+            this.player.BackColor = System.Drawing.Color.Transparent;
+            this.player.Image = ((System.Drawing.Image)(resources.GetObject("player.Image")));
+            this.player.InitialImage = null;
+            this.player.Location = new System.Drawing.Point(33, 195);
+            this.player.Name = "player";
+            this.player.Size = new System.Drawing.Size(59, 59);
+            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.player.TabIndex = 30;
+            this.player.TabStop = false;
+            // 
+            // colo1
+            // 
+            this.colo1.BackColor = System.Drawing.Color.Transparent;
+            this.colo1.Image = ((System.Drawing.Image)(resources.GetObject("colo1.Image")));
+            this.colo1.InitialImage = null;
+            this.colo1.Location = new System.Drawing.Point(395, -199);
+            this.colo1.Name = "colo1";
+            this.colo1.Size = new System.Drawing.Size(59, 271);
+            this.colo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.colo1.TabIndex = 31;
+            this.colo1.TabStop = false;
             // 
             // Game
             // 
@@ -187,16 +172,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(18)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.colo1);
+            this.Controls.Add(this.player);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.scorelabel);
             this.Controls.Add(this.colo);
-            this.Controls.Add(this.colo1);
-            this.Controls.Add(this.player);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.coloCHECKER1);
-            this.Controls.Add(this.coloCHECKER);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -205,14 +189,14 @@
             this.Name = "Game";
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coloCHECKER)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.coloCHECKER1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colo1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label label2;
 
         private System.Windows.Forms.Button button3;
 
@@ -222,18 +206,15 @@
 
         private System.Windows.Forms.Label label1;
 
-        private System.Windows.Forms.PictureBox coloCHECKER1;
-
-        private System.Windows.Forms.PictureBox colo1;
+        public System.Windows.Forms.PictureBox colo1;
 
         public System.Timers.Timer timer1;
 
         #endregion
 
         private System.Windows.Forms.PictureBox player;
-        private System.Windows.Forms.PictureBox coloCHECKER;
         private System.Windows.Forms.Label scorelabel;
-        private System.Windows.Forms.PictureBox colo;
+        public System.Windows.Forms.PictureBox colo;
     }
 }
 

@@ -21,17 +21,13 @@ namespace flapp
         {
             button1.BackColor = Color.DarkGray;
         }
-
         private void button2_MouseLeave(object sender, EventArgs e)
         {
             button1.BackColor = Color.DimGray;
         }
-        
-
-    
-
         private void button3_Click_1(object sender, EventArgs e)
-        {Option option = new Option();
+        {
+            Option option = new Option();
             Hide();
             option.Show();
         }

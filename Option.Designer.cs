@@ -43,6 +43,9 @@ namespace flapp
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Timers.Timer();
             this.button1 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.label)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
@@ -51,8 +54,8 @@ namespace flapp
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Azonix", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label3.Location = new System.Drawing.Point(5, 145);
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(5, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(264, 25);
             this.label3.TabIndex = 13;
@@ -60,10 +63,10 @@ namespace flapp
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.BackColor = System.Drawing.Color.DarkGray;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(275, 132);
+            this.button3.Location = new System.Drawing.Point(275, 108);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(41, 38);
             this.button3.TabIndex = 15;
@@ -85,7 +88,7 @@ namespace flapp
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackColor = System.Drawing.Color.DarkGray;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(327, 340);
@@ -100,18 +103,18 @@ namespace flapp
             // 
             this.label2.Font = new System.Drawing.Font("Azonix", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.label2.Location = new System.Drawing.Point(5, 231);
+            this.label2.Location = new System.Drawing.Point(5, 239);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(190, 34);
+            this.label2.Size = new System.Drawing.Size(227, 34);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Use Arrow UP to Fly\r\nand Arrow Down to ??";
+            this.label2.Text = "|Use Arrow UP to Fly\r\nand Arrow Down to land??";
             // 
             // label
             // 
             this.label.BackColor = System.Drawing.Color.Transparent;
             this.label.Image = ((System.Drawing.Image)(resources.GetObject("label.Image")));
             this.label.InitialImage = null;
-            this.label.Location = new System.Drawing.Point(12, 268);
+            this.label.Location = new System.Drawing.Point(12, 286);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(109, 110);
             this.label.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -120,10 +123,10 @@ namespace flapp
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.Silver;
+            this.button4.BackColor = System.Drawing.Color.DarkGray;
             this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button4.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(322, 132);
+            this.button4.Location = new System.Drawing.Point(322, 108);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(41, 38);
             this.button4.TabIndex = 20;
@@ -133,10 +136,10 @@ namespace flapp
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.Silver;
+            this.button5.BackColor = System.Drawing.Color.DarkGray;
             this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button5.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(382, 132);
+            this.button5.Location = new System.Drawing.Point(382, 108);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(77, 38);
             this.button5.TabIndex = 21;
@@ -147,7 +150,7 @@ namespace flapp
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Azonix", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.label1.ForeColor = System.Drawing.Color.Gainsboro;
             this.label1.Location = new System.Drawing.Point(198, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(368, 52);
@@ -163,16 +166,52 @@ namespace flapp
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Silver;
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(465, 132);
+            this.button1.Location = new System.Drawing.Point(465, 108);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(83, 38);
             this.button1.TabIndex = 23;
             this.button1.Text = "Land";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkGray;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Location = new System.Drawing.Point(322, 155);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(41, 38);
+            this.button6.TabIndex = 26;
+            this.button6.Text = "-";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Azonix", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Silver;
+            this.label4.Location = new System.Drawing.Point(5, 168);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(264, 25);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "SPEED :";
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.Color.DarkGray;
+            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button7.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Location = new System.Drawing.Point(275, 155);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(41, 38);
+            this.button7.TabIndex = 25;
+            this.button7.Text = "+";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // Option
             // 
@@ -182,6 +221,9 @@ namespace flapp
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(752, 408);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
@@ -197,12 +239,15 @@ namespace flapp
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "Option";
-            this.Load += new System.EventHandler(this.Option_Load);
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.label)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button button7;
 
         private System.Windows.Forms.Button button1;
 

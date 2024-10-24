@@ -38,6 +38,7 @@ namespace flapp
             this.button2 = new System.Windows.Forms.Button();
             this.fish = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fish)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,8 +59,8 @@ namespace flapp
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Azonix", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label2.Location = new System.Drawing.Point(182, 22);
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label2.Location = new System.Drawing.Point(188, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(368, 52);
             this.label2.TabIndex = 0;
@@ -67,7 +68,7 @@ namespace flapp
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Silver;
+            this.button2.BackColor = System.Drawing.Color.Gray;
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(301, 247);
@@ -94,7 +95,7 @@ namespace flapp
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.BackColor = System.Drawing.Color.Gray;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(301, 316);
@@ -105,6 +106,16 @@ namespace flapp
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Azonix", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Brown;
+            this.label3.Location = new System.Drawing.Point(281, 74);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(187, 18);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Created By Selam";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -113,6 +124,7 @@ namespace flapp
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(752, 408);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.fish);
             this.Controls.Add(this.button2);
@@ -126,6 +138,8 @@ namespace flapp
             ((System.ComponentModel.ISupportInitialize)(this.fish)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label3;
 
         private System.Windows.Forms.Button button3;
 
