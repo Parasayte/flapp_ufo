@@ -9,3 +9,9 @@ C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.exe
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.pdb
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.Game.resources
 C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.Menu.resources
+C:\Users\Saad\source\repos\flapp\bin\Debug\assets\colomn8.png
+C:\Users\Saad\source\repos\flapp\bin\Debug\assets\colomn9.png
+C:\Users\Saad\source\repos\flapp\bin\Debug\assets\player.gif
+C:\Users\Saad\source\repos\flapp\bin\Debug\assets\space2.png
+C:\Users\Saad\source\repos\flapp\bin\Debug\assets\starship.ico
+C:\Users\Saad\source\repos\flapp\obj\Debug\flapp.Option.resources

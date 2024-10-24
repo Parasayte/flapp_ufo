@@ -118,7 +118,16 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="fish1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\fish1.gif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="player" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\player.gif;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colomn9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\colomn9.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="colomn8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\colomn8.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="space2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\space2.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
