@@ -187,6 +187,7 @@
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "Game";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Game_FormClosing);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colo)).EndInit();

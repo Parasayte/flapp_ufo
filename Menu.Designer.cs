@@ -123,7 +123,7 @@ namespace flapp
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(18)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(752, 408);
+            this.ClientSize = new System.Drawing.Size(752, 425);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.fish);
@@ -135,6 +135,7 @@ namespace flapp
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "Menu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.fish)).EndInit();
             this.ResumeLayout(false);
         }

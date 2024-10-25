@@ -86,6 +86,7 @@ namespace flapp
             {
                 player.Top += speed*30;
             }
+            time = 0;
         }
         private void JumpUp(int speed)
         {
@@ -179,6 +180,11 @@ namespace flapp
             Close();
             Option o = new Option();
             o.Show();
+        }
+
+        private void Game_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
         }
     }
 }

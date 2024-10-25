@@ -35,6 +35,7 @@ namespace flapp
             {
                 player.Top += speed*30;
             }
+            time = 0;
         }
         private void button2_Click_1(object sender, EventArgs e)
         {
@@ -106,6 +107,11 @@ namespace flapp
                 speed--;
                 label4.Text = "Speed : " + speed;
             }
+        }
+
+        private void Option_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
         }
     }
 }

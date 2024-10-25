@@ -31,5 +31,10 @@ namespace flapp
             Hide();
             option.Show();
         }
+
+        private void Menu_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
