@@ -56,10 +56,10 @@
             // 
             this.button3.BackColor = System.Drawing.Color.DarkGray;
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Azonix", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(12, 392);
+            this.button3.Font = new System.Drawing.Font("Azonix", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(339, 334);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(57, 32);
+            this.button3.Size = new System.Drawing.Size(115, 48);
             this.button3.TabIndex = 21;
             this.button3.Text = "Menu";
             this.button3.UseVisualStyleBackColor = false;

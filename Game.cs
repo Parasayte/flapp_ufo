@@ -7,9 +7,9 @@ namespace flapp
 {
     public partial class Game : Form
     {
-        private int colomnSpeed = Option.speed;
+        public int colomnSpeed = Option.speed;
         public int gravity =Option.gravity1;
-        public int jumpHigh = 1;
+        public int jumpHigh = Option.jumphigh;
         private int time;
         private bool jumping;
         private int score = 0;
@@ -23,24 +23,24 @@ namespace flapp
             {
                 case 10:
                    
-                    colomnSpeed += 2;
+                    colomnSpeed += 4;
                     break;
                 case 20:
                     gravity ++;
-                    colomnSpeed += 2;
+                    colomnSpeed += 4;
                     break;
                 case 30:
-                    colomnSpeed += 2;
+                    colomnSpeed += 4;
                     break;
                 case 40:
                    gravity ++;
-                    colomnSpeed += 2;
+                    colomnSpeed += 4;
                     break;
                 case 50:
-                    colomnSpeed += 2;
+                    colomnSpeed += 4;
                     break;
                 case 60:
-                    colomnSpeed += 2;
+                    colomnSpeed += 4;
                     break;
             }
         }
@@ -187,6 +187,14 @@ namespace flapp
             o.Show();
         }
 
-      
+        private void Game_FormClosing(object sender, FormClosingEventArgs e)
+        {
+           
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

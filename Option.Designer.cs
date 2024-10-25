@@ -46,6 +46,9 @@ namespace flapp
             this.button6 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.label)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
@@ -103,7 +106,7 @@ namespace flapp
             // 
             this.label2.Font = new System.Drawing.Font("Azonix", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(5, 239);
+            this.label2.Location = new System.Drawing.Point(5, 279);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(227, 34);
             this.label2.TabIndex = 18;
@@ -114,9 +117,9 @@ namespace flapp
             this.label.BackColor = System.Drawing.Color.Transparent;
             this.label.Image = ((System.Drawing.Image)(resources.GetObject("label.Image")));
             this.label.InitialImage = null;
-            this.label.Location = new System.Drawing.Point(12, 286);
+            this.label.Location = new System.Drawing.Point(21, 329);
             this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(109, 110);
+            this.label.Size = new System.Drawing.Size(88, 67);
             this.label.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.label.TabIndex = 19;
             this.label.TabStop = false;
@@ -213,6 +216,42 @@ namespace flapp
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.DarkGray;
+            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button8.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.Location = new System.Drawing.Point(356, 202);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(41, 38);
+            this.button8.TabIndex = 29;
+            this.button8.Text = "-";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Azonix", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Silver;
+            this.label5.Location = new System.Drawing.Point(5, 215);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(298, 25);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Jump high :";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.DarkGray;
+            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button9.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.Location = new System.Drawing.Point(309, 202);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(41, 38);
+            this.button9.TabIndex = 28;
+            this.button9.Text = "+";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Option
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,6 +260,9 @@ namespace flapp
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(752, 408);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button7);
@@ -245,6 +287,10 @@ namespace flapp
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button9;
 
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label4;

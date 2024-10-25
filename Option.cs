@@ -10,13 +10,14 @@ namespace flapp
         private bool jumping;
         private int time;
         public static int gravity1=2;
-        private  int jumphigh=1;
+        public static  int jumphigh=1;
         public static int speed=8;
         public Option()
         {
             InitializeComponent();
             label3.Text = "Gravity : " + gravity1;
-            label4.Text = "Speed : " + speed;
+            label4.Text = "game Speed : " + speed;
+            label5.Text = "Jump High : " + jumphigh;
         }
         Game game = new Game();
         
@@ -98,20 +99,42 @@ namespace flapp
         private void button7_Click(object sender, EventArgs e)
         {
             speed++;
-            label4.Text = "Speed : " + speed;
+            label4.Text = "game Speed : " + speed;
+            game.colomnSpeed= speed;
         }
         private void button6_Click(object sender, EventArgs e)
         {
             if(speed>1)
             { 
                 speed--;
-                label4.Text = "Speed : " + speed;
+                label4.Text = "game Speed : " + speed;
+                game.colomnSpeed= speed;
             }
         }
 
         private void Option_FormClosing(object sender, FormClosingEventArgs e)
         {
            
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if(jumphigh<4)
+            {
+                jumphigh++;
+                label5.Text = "Jump High : " + jumphigh;
+                game.jumpHigh = jumphigh;
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if(jumphigh>1)
+            {
+                jumphigh--;
+                label5.Text = "Jump High : " + jumphigh;
+                game.jumpHigh = jumphigh;
+            }
         }
     }
 }
