@@ -54,9 +54,14 @@ namespace flapp
         }
         public void Gravity(PictureBox player)
         {
-            if (player.Location.Y < 395 )
+            if (player.Location.Y <= 395 )
             {
                 player.Top += time*gravity/5;
+            }
+
+            if (gravity==0)
+            {
+                time = 0;
             }
             if (player.Location.Y > 395 )
             {
@@ -64,7 +69,7 @@ namespace flapp
             }
             if (player.Location.Y < 1)
             {
-                player.Location = new Point(player.Location.X, 0);
+                player.Location = new Point(player.Location.X, 1);
             }
         }
         private void timer1_Elapsed(object sender, ElapsedEventArgs e)
@@ -182,9 +187,6 @@ namespace flapp
             o.Show();
         }
 
-        private void Game_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            
-        }
+      
     }
 }

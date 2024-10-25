@@ -133,13 +133,13 @@
             // 
             // label2
             // 
-            this.label2.Font = new System.Drawing.Font("Arabic Pixel 2", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arabic Pixel 2", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(22, 36);
+            this.label2.Location = new System.Drawing.Point(12, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 23);
+            this.label2.Size = new System.Drawing.Size(122, 36);
             this.label2.TabIndex = 29;
-            this.label2.Text = "Cool : 0";
+            this.label2.Text = "Good : 0";
             // 
             // player
             // 
@@ -182,12 +182,11 @@
             this.Controls.Add(this.colo);
             this.Controls.Add(this.button3);
             this.DoubleBuffered = true;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "Game";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Game_FormClosing);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colo)).EndInit();
