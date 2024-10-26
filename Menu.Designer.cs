@@ -39,6 +39,7 @@ namespace flapp
             this.fish = new System.Windows.Forms.PictureBox();
             this.menu_option_button = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.fish)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,6 @@ namespace flapp
             this.menu_start_button.Text = "Start";
             this.menu_start_button.UseVisualStyleBackColor = false;
             this.menu_start_button.Click += new System.EventHandler(this.Menu_Start);
-           
             // 
             // fish
             // 
@@ -108,12 +108,22 @@ namespace flapp
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Azonix", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Brown;
+            this.label3.ForeColor = System.Drawing.Color.Maroon;
             this.label3.Location = new System.Drawing.Point(281, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(187, 18);
             this.label3.TabIndex = 17;
             this.label3.Text = "Created By Selam";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Azonix", 5.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Brown;
+            this.label4.Location = new System.Drawing.Point(12, 393);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 47);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "Everything in this program was built by me only. (GRAVITY , JUMPING )";
             // 
             // Menu
             // 
@@ -123,6 +133,7 @@ namespace flapp
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(752, 425);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.menu_option_button);
             this.Controls.Add(this.fish);
@@ -139,6 +150,8 @@ namespace flapp
             ((System.ComponentModel.ISupportInitialize)(this.fish)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Label label4;
 
         private System.Windows.Forms.Label label3;
 

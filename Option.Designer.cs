@@ -49,9 +49,11 @@ namespace flapp
             this.jump_high_minus = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.jump_high_plus = new System.Windows.Forms.Button();
+            this.timer2 = new System.Timers.Timer();
             ((System.ComponentModel.ISupportInitialize)(this.player_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.label)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timer2)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -163,7 +165,7 @@ namespace flapp
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 16D;
+            this.timer1.Interval = 6D;
             this.timer1.SynchronizingObject = this;
             this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.Game_loop);
             // 
@@ -252,6 +254,13 @@ namespace flapp
             this.jump_high_plus.UseVisualStyleBackColor = false;
             this.jump_high_plus.Click += new System.EventHandler(this.JumpHigh_plus);
             // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 6D;
+            this.timer2.SynchronizingObject = this;
+            this.timer2.Elapsed += new System.Timers.ElapsedEventHandler(this.timer2_Elapsed);
+            // 
             // Option
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -285,8 +294,11 @@ namespace flapp
             ((System.ComponentModel.ISupportInitialize)(this.player_pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.label)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timer2)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Timers.Timer timer2;
 
         private System.Windows.Forms.Button jump_high_minus;
         private System.Windows.Forms.Label label5;

@@ -39,16 +39,19 @@
             this.frames_counter = new System.Windows.Forms.Label();
             this.player = new System.Windows.Forms.PictureBox();
             this.colo_downn = new System.Windows.Forms.PictureBox();
+            this.timer2 = new System.Timers.Timer();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colo_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colo_downn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timer2)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
             // 
             this.timer1.Enabled = true;
-            this.timer1.Interval = 16D;
+            this.timer1.Interval = 6D;
             this.timer1.SynchronizingObject = this;
             this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.Game_loop);
             // 
@@ -123,7 +126,7 @@
             this.game_over.AutoSize = true;
             this.game_over.BackColor = System.Drawing.Color.Transparent;
             this.game_over.Font = new System.Drawing.Font("Azonix", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.game_over.ForeColor = System.Drawing.Color.Brown;
+            this.game_over.ForeColor = System.Drawing.Color.Maroon;
             this.game_over.Location = new System.Drawing.Point(287, 131);
             this.game_over.Name = "game_over";
             this.game_over.Size = new System.Drawing.Size(227, 32);
@@ -134,10 +137,10 @@
             // frames_counter
             // 
             this.frames_counter.Font = new System.Drawing.Font("Arabic Pixel 2", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.frames_counter.ForeColor = System.Drawing.Color.Gold;
+            this.frames_counter.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.frames_counter.Location = new System.Drawing.Point(12, 36);
             this.frames_counter.Name = "frames_counter";
-            this.frames_counter.Size = new System.Drawing.Size(122, 36);
+            this.frames_counter.Size = new System.Drawing.Size(122, 26);
             this.frames_counter.TabIndex = 29;
             this.frames_counter.Text = "Good : 0";
             // 
@@ -165,6 +168,23 @@
             this.colo_downn.TabIndex = 31;
             this.colo_downn.TabStop = false;
             // 
+            // timer2
+            // 
+            this.timer2.Enabled = true;
+            this.timer2.Interval = 6D;
+            this.timer2.SynchronizingObject = this;
+            this.timer2.Elapsed += new System.Timers.ElapsedEventHandler(this.timer2_Elapsed);
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Arabic Pixel 2", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(12, 62);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(122, 24);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Arch : 0";
+            // 
             // Game
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -172,6 +192,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(18)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.colo_downn);
             this.Controls.Add(this.player);
             this.Controls.Add(this.frames_counter);
@@ -193,9 +214,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.colo_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colo_downn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.timer2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
+
+        private System.Windows.Forms.Label label1;
+
+        private System.Timers.Timer timer2;
 
         private System.Windows.Forms.Label frames_counter;
 
@@ -209,7 +235,7 @@
 
         public System.Windows.Forms.PictureBox colo_downn;
 
-        public System.Timers.Timer timer1;
+        private System.Timers.Timer timer1;
 
         #endregion
 

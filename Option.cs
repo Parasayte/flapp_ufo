@@ -8,9 +8,12 @@ namespace flapp
     public partial class Option : Form
     {
         private int _time;
-        public static int Gravity1=5;
-        public static  int Jumphigh=2;
-        public static int Speed=9;
+        public static int Gravity1=3;
+        public static  int Jumphigh=3;
+        private int _reversetime = 50;
+        public static int Speed=5;
+       private bool JumpingUp;
+       private bool JumpingDown;
         public Option()
         {
             InitializeComponent();
@@ -20,23 +23,7 @@ namespace flapp
         }
         Game _game = new Game();
         
-        private void JumpUp(int jumpHigh)
-        {
-            for (int i = 0; i < jumpHigh; i++)
-            {
-                player_pictureBox.Top -= jumpHigh*10;
-            }
-               
-            _time = 0;
-        }
-        private void JumpDown(int jumpHigh)
-        {
-            for (int i = 0; i < jumpHigh; i++)
-            {
-                player_pictureBox.Top += jumpHigh*10;
-            }
-            _time = 0;
-        }
+       
         private void Option_start_button(object sender, EventArgs e)
         {
 
@@ -86,15 +73,23 @@ namespace flapp
         private void Game_loop(object sender, ElapsedEventArgs e)
         {
             _time++;
-            Gravity(player_pictureBox);
+            if(!JumpingUp||!JumpingDown)
+                Gravity(player_pictureBox);
+          
+
         }
         private void Jump_button(object sender, EventArgs e)
-        {
-            JumpUp(Jumphigh);
+        { 
+            JumpingUp = true;
+            _reversetime = 15;
+            _time = 0;
         }
         private void Land_button(object sender, EventArgs e)
         {
-           JumpDown(Jumphigh);
+            JumpingDown = true;
+            _reversetime = 15;
+            _time = 0;
+          
         }
         private void Speed_plus(object sender, EventArgs e)
         {
@@ -130,6 +125,73 @@ namespace flapp
                 label5.Text = @"Jump High : " + Jumphigh;
                 _game.JumpHigh = Jumphigh;
             }
+        }
+        
+        public void JumpUp(PictureBox player)
+        {
+                if (_reversetime>0)
+                {
+                    player.Top -= (_reversetime/3)* Jumphigh-Gravity1;
+                    _reversetime--;
+                }
+
+                if (_reversetime == 0)
+                {
+                    JumpingUp = false;
+                }
+                if (player.Location.Y < 1)
+                {
+                    player.Location = new Point(player.Location.X, 1);
+                }
+                if (player.Location.Y > 350 )
+                {
+                    player.Location = new Point(player.Location.X, 350);
+                }
+                
+            
+                _time = 0;
+        }
+        public void JumpDown(PictureBox player)
+        {
+            
+                if (_reversetime>0)
+                {
+                    player.Top += (_reversetime)* Jumphigh/6-Gravity1;
+                    _reversetime--;
+                }
+
+                if (_reversetime == 0)
+                {
+                    JumpingDown = false;
+                }
+                if (player.Location.Y < 1)
+                {
+                    player.Location = new Point(player.Location.X, 1);
+                }
+                if (player.Location.Y > 350 )
+                {
+                    player.Location = new Point(player.Location.X, 350);
+                }
+                
+        }
+        private void timer2_Elapsed(object sender, ElapsedEventArgs e)
+        {
+            if (JumpingUp)
+            {
+                JumpUp(player_pictureBox);
+            }
+
+            if (JumpingDown)
+            {
+                JumpDown(player_pictureBox);
+            }
+
+            Random random = new Random();
+            int r = random.Next(0, 255);
+            int g = random.Next(0, 255);
+            int b = random.Next(0, 255);
+
+            label2.ForeColor=Color.FromArgb(r, g, b);
         }
     }
 }
