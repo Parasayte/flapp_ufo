@@ -121,7 +121,7 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="colo1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="colo_downn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAAJOCAYAAAB7tt8bAAAABGdBTUEAALGPC/xhBQAAHvJJREFUeF7t
         0zuOLMuSHdA7FIIcQCtUKFFuhUBTo8ABvPkPoFlxVFsbNLhHlkfkMQOWS7WR9on657/+l//+n2PMhzD+
@@ -325,7 +325,7 @@
         coQLGz6MOLHixYwbO34MObLkyZQrW76MObPmzZw7e/4MOrTo0aRLmz6NOrXq1ayTFQAAOw==
 </value>
   </data>
-  <data name="colo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="colo_up.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAIIAAAJOCAYAAAB7tt8bAAAABGdBTUEAALGPC/xhBQAAHfxJREFUeF7t
         0zGOLbFxBVAtxbAjRU6UODJgQIESA1bmwAvQ/hdg0wNGXafQVJNoskdVwEk+msPLW+//4fT523//9X9/

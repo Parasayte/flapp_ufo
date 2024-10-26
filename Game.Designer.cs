@@ -30,19 +30,19 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Game));
             this.timer1 = new System.Timers.Timer();
-            this.button3 = new System.Windows.Forms.Button();
-            this.colo = new System.Windows.Forms.PictureBox();
+            this.menu_button = new System.Windows.Forms.Button();
+            this.colo_up = new System.Windows.Forms.PictureBox();
             this.scorelabel = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.option_button = new System.Windows.Forms.Button();
+            this.restart_button = new System.Windows.Forms.Button();
+            this.game_over = new System.Windows.Forms.Label();
+            this.frames_counter = new System.Windows.Forms.Label();
             this.player = new System.Windows.Forms.PictureBox();
-            this.colo1 = new System.Windows.Forms.PictureBox();
+            this.colo_downn = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colo_up)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colo1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colo_downn)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -52,31 +52,31 @@
             this.timer1.SynchronizingObject = this;
             this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
             // 
-            // button3
+            // menu_button
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkGray;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Azonix", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(339, 334);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(115, 48);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Menu";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_2);
+            this.menu_button.BackColor = System.Drawing.Color.DarkGray;
+            this.menu_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.menu_button.Font = new System.Drawing.Font("Azonix", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_button.Location = new System.Drawing.Point(339, 334);
+            this.menu_button.Name = "menu_button";
+            this.menu_button.Size = new System.Drawing.Size(115, 48);
+            this.menu_button.TabIndex = 21;
+            this.menu_button.Text = "Menu";
+            this.menu_button.UseVisualStyleBackColor = false;
+            this.menu_button.Visible = false;
+            this.menu_button.Click += new System.EventHandler(this.button3_Click_2);
             // 
-            // colo
+            // colo_up
             // 
-            this.colo.BackColor = System.Drawing.Color.Transparent;
-            this.colo.Image = ((System.Drawing.Image)(resources.GetObject("colo.Image")));
-            this.colo.InitialImage = null;
-            this.colo.Location = new System.Drawing.Point(742, 380);
-            this.colo.Name = "colo";
-            this.colo.Size = new System.Drawing.Size(65, 272);
-            this.colo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.colo.TabIndex = 24;
-            this.colo.TabStop = false;
+            this.colo_up.BackColor = System.Drawing.Color.Transparent;
+            this.colo_up.Image = ((System.Drawing.Image)(resources.GetObject("colo_up.Image")));
+            this.colo_up.InitialImage = null;
+            this.colo_up.Location = new System.Drawing.Point(742, 380);
+            this.colo_up.Name = "colo_up";
+            this.colo_up.Size = new System.Drawing.Size(65, 272);
+            this.colo_up.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.colo_up.TabIndex = 24;
+            this.colo_up.TabStop = false;
             // 
             // scorelabel
             // 
@@ -90,56 +90,56 @@
             this.scorelabel.TabIndex = 25;
             this.scorelabel.Text = "Score : 0";
             // 
-            // button2
+            // option_button
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(339, 271);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 48);
-            this.button2.TabIndex = 28;
-            this.button2.Text = "Option";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.option_button.BackColor = System.Drawing.Color.DarkGray;
+            this.option_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.option_button.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.option_button.Location = new System.Drawing.Point(339, 271);
+            this.option_button.Name = "option_button";
+            this.option_button.Size = new System.Drawing.Size(115, 48);
+            this.option_button.TabIndex = 28;
+            this.option_button.Text = "Option";
+            this.option_button.UseVisualStyleBackColor = false;
+            this.option_button.Visible = false;
+            this.option_button.Click += new System.EventHandler(this.button2_Click_1);
             // 
-            // button1
+            // restart_button
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(339, 206);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 48);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Restart";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Visible = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.restart_button.BackColor = System.Drawing.Color.DarkGray;
+            this.restart_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.restart_button.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restart_button.Location = new System.Drawing.Point(339, 206);
+            this.restart_button.Name = "restart_button";
+            this.restart_button.Size = new System.Drawing.Size(115, 48);
+            this.restart_button.TabIndex = 27;
+            this.restart_button.Text = "Restart";
+            this.restart_button.UseVisualStyleBackColor = false;
+            this.restart_button.Visible = false;
+            this.restart_button.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // label1
+            // game_over
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Azonix", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Brown;
-            this.label1.Location = new System.Drawing.Point(287, 131);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 32);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Game Over";
-            this.label1.Visible = false;
+            this.game_over.AutoSize = true;
+            this.game_over.BackColor = System.Drawing.Color.Transparent;
+            this.game_over.Font = new System.Drawing.Font("Azonix", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game_over.ForeColor = System.Drawing.Color.Brown;
+            this.game_over.Location = new System.Drawing.Point(287, 131);
+            this.game_over.Name = "game_over";
+            this.game_over.Size = new System.Drawing.Size(227, 32);
+            this.game_over.TabIndex = 26;
+            this.game_over.Text = "Game Over";
+            this.game_over.Visible = false;
             // 
-            // label2
+            // frames_counter
             // 
-            this.label2.Font = new System.Drawing.Font("Arabic Pixel 2", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Gold;
-            this.label2.Location = new System.Drawing.Point(12, 36);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 36);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Good : 0";
+            this.frames_counter.Font = new System.Drawing.Font("Arabic Pixel 2", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.frames_counter.ForeColor = System.Drawing.Color.Gold;
+            this.frames_counter.Location = new System.Drawing.Point(12, 36);
+            this.frames_counter.Name = "frames_counter";
+            this.frames_counter.Size = new System.Drawing.Size(122, 36);
+            this.frames_counter.TabIndex = 29;
+            this.frames_counter.Text = "Good : 0";
             // 
             // player
             // 
@@ -153,17 +153,17 @@
             this.player.TabIndex = 30;
             this.player.TabStop = false;
             // 
-            // colo1
+            // colo_downn
             // 
-            this.colo1.BackColor = System.Drawing.Color.Transparent;
-            this.colo1.Image = ((System.Drawing.Image)(resources.GetObject("colo1.Image")));
-            this.colo1.InitialImage = null;
-            this.colo1.Location = new System.Drawing.Point(395, -199);
-            this.colo1.Name = "colo1";
-            this.colo1.Size = new System.Drawing.Size(59, 271);
-            this.colo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.colo1.TabIndex = 31;
-            this.colo1.TabStop = false;
+            this.colo_downn.BackColor = System.Drawing.Color.Transparent;
+            this.colo_downn.Image = ((System.Drawing.Image)(resources.GetObject("colo_downn.Image")));
+            this.colo_downn.InitialImage = null;
+            this.colo_downn.Location = new System.Drawing.Point(395, -199);
+            this.colo_downn.Name = "colo_downn";
+            this.colo_downn.Size = new System.Drawing.Size(59, 271);
+            this.colo_downn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.colo_downn.TabIndex = 31;
+            this.colo_downn.TabStop = false;
             // 
             // Game
             // 
@@ -172,15 +172,15 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(18)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.colo1);
+            this.Controls.Add(this.colo_downn);
             this.Controls.Add(this.player);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.frames_counter);
+            this.Controls.Add(this.option_button);
+            this.Controls.Add(this.restart_button);
+            this.Controls.Add(this.game_over);
             this.Controls.Add(this.scorelabel);
-            this.Controls.Add(this.colo);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.colo_up);
+            this.Controls.Add(this.menu_button);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -189,24 +189,24 @@
             this.Name = "Game";
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colo_up)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.colo1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.colo_downn)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
         }
 
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label frames_counter;
 
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button menu_button;
 
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button option_button;
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button restart_button;
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label game_over;
 
-        public System.Windows.Forms.PictureBox colo1;
+        public System.Windows.Forms.PictureBox colo_downn;
 
         public System.Timers.Timer timer1;
 
@@ -214,7 +214,7 @@
 
         private System.Windows.Forms.PictureBox player;
         private System.Windows.Forms.Label scorelabel;
-        public System.Windows.Forms.PictureBox colo;
+        public System.Windows.Forms.PictureBox colo_up;
     }
 }
 

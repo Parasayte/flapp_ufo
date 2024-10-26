@@ -33,23 +33,23 @@ namespace flapp
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Option));
             this.label3 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.player = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.gravity_plus = new System.Windows.Forms.Button();
+            this.player_pictureBox = new System.Windows.Forms.PictureBox();
+            this.start_button = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.PictureBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.gravity_minus = new System.Windows.Forms.Button();
+            this.fly_button = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Timers.Timer();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.land_button = new System.Windows.Forms.Button();
+            this.game_speed_minus = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.game_speed_plus = new System.Windows.Forms.Button();
+            this.jump_high_minus = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+            this.jump_high_plus = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.player_pictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.label)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).BeginInit();
             this.SuspendLayout();
@@ -64,43 +64,43 @@ namespace flapp
             this.label3.TabIndex = 13;
             this.label3.Text = "Gravity : ";
             // 
-            // button3
+            // gravity_plus
             // 
-            this.button3.BackColor = System.Drawing.Color.DarkGray;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(309, 108);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(41, 38);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "+";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click_1);
+            this.gravity_plus.BackColor = System.Drawing.Color.DarkGray;
+            this.gravity_plus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gravity_plus.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gravity_plus.Location = new System.Drawing.Point(309, 108);
+            this.gravity_plus.Name = "gravity_plus";
+            this.gravity_plus.Size = new System.Drawing.Size(41, 38);
+            this.gravity_plus.TabIndex = 15;
+            this.gravity_plus.Text = "+";
+            this.gravity_plus.UseVisualStyleBackColor = false;
+            this.gravity_plus.Click += new System.EventHandler(this.button3_Click_1);
             // 
-            // player
+            // player_pictureBox
             // 
-            this.player.BackColor = System.Drawing.Color.Transparent;
-            this.player.Image = ((System.Drawing.Image)(resources.GetObject("player.Image")));
-            this.player.InitialImage = null;
-            this.player.Location = new System.Drawing.Point(651, 55);
-            this.player.Name = "player";
-            this.player.Size = new System.Drawing.Size(60, 53);
-            this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.player.TabIndex = 16;
-            this.player.TabStop = false;
+            this.player_pictureBox.BackColor = System.Drawing.Color.Transparent;
+            this.player_pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("player_pictureBox.Image")));
+            this.player_pictureBox.InitialImage = null;
+            this.player_pictureBox.Location = new System.Drawing.Point(651, 55);
+            this.player_pictureBox.Name = "player_pictureBox";
+            this.player_pictureBox.Size = new System.Drawing.Size(60, 53);
+            this.player_pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.player_pictureBox.TabIndex = 16;
+            this.player_pictureBox.TabStop = false;
             // 
-            // button2
+            // start_button
             // 
-            this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(327, 340);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 38);
-            this.button2.TabIndex = 17;
-            this.button2.Text = "Start";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            this.start_button.BackColor = System.Drawing.Color.DarkGray;
+            this.start_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.start_button.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.start_button.Location = new System.Drawing.Point(327, 340);
+            this.start_button.Name = "start_button";
+            this.start_button.Size = new System.Drawing.Size(107, 38);
+            this.start_button.TabIndex = 17;
+            this.start_button.Text = "Start";
+            this.start_button.UseVisualStyleBackColor = false;
+            this.start_button.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // label2
             // 
@@ -124,31 +124,31 @@ namespace flapp
             this.label.TabIndex = 19;
             this.label.TabStop = false;
             // 
-            // button4
+            // gravity_minus
             // 
-            this.button4.BackColor = System.Drawing.Color.DarkGray;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(356, 108);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(41, 38);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "-";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            this.gravity_minus.BackColor = System.Drawing.Color.DarkGray;
+            this.gravity_minus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gravity_minus.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gravity_minus.Location = new System.Drawing.Point(356, 108);
+            this.gravity_minus.Name = "gravity_minus";
+            this.gravity_minus.Size = new System.Drawing.Size(41, 38);
+            this.gravity_minus.TabIndex = 20;
+            this.gravity_minus.Text = "-";
+            this.gravity_minus.UseVisualStyleBackColor = false;
+            this.gravity_minus.Click += new System.EventHandler(this.button4_Click_1);
             // 
-            // button5
+            // fly_button
             // 
-            this.button5.BackColor = System.Drawing.Color.DarkGray;
-            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button5.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(416, 108);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(77, 38);
-            this.button5.TabIndex = 21;
-            this.button5.Text = "Fly\r\n";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click_1);
+            this.fly_button.BackColor = System.Drawing.Color.DarkGray;
+            this.fly_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.fly_button.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fly_button.Location = new System.Drawing.Point(416, 108);
+            this.fly_button.Name = "fly_button";
+            this.fly_button.Size = new System.Drawing.Size(77, 38);
+            this.fly_button.TabIndex = 21;
+            this.fly_button.Text = "Fly\r\n";
+            this.fly_button.UseVisualStyleBackColor = false;
+            this.fly_button.Click += new System.EventHandler(this.button5_Click_1);
             // 
             // label1
             // 
@@ -167,31 +167,31 @@ namespace flapp
             this.timer1.SynchronizingObject = this;
             this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
             // 
-            // button1
+            // land_button
             // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(499, 108);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 38);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "Land";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.land_button.BackColor = System.Drawing.Color.DarkGray;
+            this.land_button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.land_button.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.land_button.Location = new System.Drawing.Point(499, 108);
+            this.land_button.Name = "land_button";
+            this.land_button.Size = new System.Drawing.Size(83, 38);
+            this.land_button.TabIndex = 23;
+            this.land_button.Text = "Land";
+            this.land_button.UseVisualStyleBackColor = false;
+            this.land_button.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button6
+            // game_speed_minus
             // 
-            this.button6.BackColor = System.Drawing.Color.DarkGray;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button6.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(356, 155);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(41, 38);
-            this.button6.TabIndex = 26;
-            this.button6.Text = "-";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.game_speed_minus.BackColor = System.Drawing.Color.DarkGray;
+            this.game_speed_minus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.game_speed_minus.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game_speed_minus.Location = new System.Drawing.Point(356, 155);
+            this.game_speed_minus.Name = "game_speed_minus";
+            this.game_speed_minus.Size = new System.Drawing.Size(41, 38);
+            this.game_speed_minus.TabIndex = 26;
+            this.game_speed_minus.Text = "-";
+            this.game_speed_minus.UseVisualStyleBackColor = false;
+            this.game_speed_minus.Click += new System.EventHandler(this.button6_Click);
             // 
             // label4
             // 
@@ -203,31 +203,31 @@ namespace flapp
             this.label4.TabIndex = 24;
             this.label4.Text = "game SPEED :";
             // 
-            // button7
+            // game_speed_plus
             // 
-            this.button7.BackColor = System.Drawing.Color.DarkGray;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(309, 155);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(41, 38);
-            this.button7.TabIndex = 25;
-            this.button7.Text = "+";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.game_speed_plus.BackColor = System.Drawing.Color.DarkGray;
+            this.game_speed_plus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.game_speed_plus.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.game_speed_plus.Location = new System.Drawing.Point(309, 155);
+            this.game_speed_plus.Name = "game_speed_plus";
+            this.game_speed_plus.Size = new System.Drawing.Size(41, 38);
+            this.game_speed_plus.TabIndex = 25;
+            this.game_speed_plus.Text = "+";
+            this.game_speed_plus.UseVisualStyleBackColor = false;
+            this.game_speed_plus.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button8
+            // jump_high_minus
             // 
-            this.button8.BackColor = System.Drawing.Color.DarkGray;
-            this.button8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button8.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.Location = new System.Drawing.Point(356, 202);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(41, 38);
-            this.button8.TabIndex = 29;
-            this.button8.Text = "-";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.jump_high_minus.BackColor = System.Drawing.Color.DarkGray;
+            this.jump_high_minus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.jump_high_minus.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jump_high_minus.Location = new System.Drawing.Point(356, 202);
+            this.jump_high_minus.Name = "jump_high_minus";
+            this.jump_high_minus.Size = new System.Drawing.Size(41, 38);
+            this.jump_high_minus.TabIndex = 29;
+            this.jump_high_minus.Text = "-";
+            this.jump_high_minus.UseVisualStyleBackColor = false;
+            this.jump_high_minus.Click += new System.EventHandler(this.button8_Click);
             // 
             // label5
             // 
@@ -239,18 +239,18 @@ namespace flapp
             this.label5.TabIndex = 27;
             this.label5.Text = "Jump high :";
             // 
-            // button9
+            // jump_high_plus
             // 
-            this.button9.BackColor = System.Drawing.Color.DarkGray;
-            this.button9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button9.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.Location = new System.Drawing.Point(309, 202);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(41, 38);
-            this.button9.TabIndex = 28;
-            this.button9.Text = "+";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
+            this.jump_high_plus.BackColor = System.Drawing.Color.DarkGray;
+            this.jump_high_plus.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.jump_high_plus.Font = new System.Drawing.Font("Azonix", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jump_high_plus.Location = new System.Drawing.Point(309, 202);
+            this.jump_high_plus.Name = "jump_high_plus";
+            this.jump_high_plus.Size = new System.Drawing.Size(41, 38);
+            this.jump_high_plus.TabIndex = 28;
+            this.jump_high_plus.Text = "+";
+            this.jump_high_plus.UseVisualStyleBackColor = false;
+            this.jump_high_plus.Click += new System.EventHandler(this.button9_Click);
             // 
             // Option
             // 
@@ -260,59 +260,59 @@ namespace flapp
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(752, 408);
-            this.Controls.Add(this.button8);
+            this.Controls.Add(this.jump_high_minus);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.jump_high_plus);
+            this.Controls.Add(this.game_speed_minus);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.game_speed_plus);
+            this.Controls.Add(this.land_button);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.fly_button);
+            this.Controls.Add(this.gravity_minus);
             this.Controls.Add(this.label);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.player);
+            this.Controls.Add(this.start_button);
+            this.Controls.Add(this.player_pictureBox);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.gravity_plus);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "Option";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Option_FormClosing);
-            ((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.player_pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.label)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             this.ResumeLayout(false);
         }
 
-        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button jump_high_minus;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button jump_high_plus;
 
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button game_speed_minus;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button game_speed_plus;
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button land_button;
 
         private System.Timers.Timer timer1;
 
         private System.Windows.Forms.Label label1;
 
         private System.Windows.Forms.PictureBox label;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button gravity_minus;
+        private System.Windows.Forms.Button fly_button;
 
         private System.Windows.Forms.Label label2;
 
-        private System.Windows.Forms.PictureBox player;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox player_pictureBox;
+        private System.Windows.Forms.Button start_button;
 
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button gravity_plus;
 
         #endregion
     }
