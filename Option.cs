@@ -10,7 +10,7 @@ namespace flapp
         private int _time;
         public static int Gravity1=5;
         public static  int Jumphigh=2;
-        public static int Speed=12;
+        public static int Speed=9;
         public Option()
         {
             InitializeComponent();
@@ -37,7 +37,7 @@ namespace flapp
             }
             _time = 0;
         }
-        private void button2_Click_1(object sender, EventArgs e)
+        private void Option_start_button(object sender, EventArgs e)
         {
 
             _game.colo_up.Location = new Point(742, 380);
@@ -68,14 +68,14 @@ namespace flapp
                 player.Location = new Point(player.Location.X, 1);
             }
         }
-        private void button4_Click_1(object sender, EventArgs e)
+        private void Gravity_minus(object sender, EventArgs e)
         { 
             timer1.Start();
             Gravity1--;
             label3.Text = @"Gravity : "+Gravity1;
             _game.GravityGame=  Gravity1;
         }
-        private void button3_Click_1(object sender, EventArgs e)
+        private void Gravity_plus(object sender, EventArgs e)
         {
             timer1.Start();
             Jumphigh = _game.JumpHigh;
@@ -83,26 +83,26 @@ namespace flapp
             label3.Text = @"Gravity : "+Gravity1;
            _game.GravityGame =Gravity1;
         }
-        private void timer1_Elapsed(object sender, ElapsedEventArgs e)
+        private void Game_loop(object sender, ElapsedEventArgs e)
         {
             _time++;
             Gravity(player_pictureBox);
         }
-        private void button5_Click_1(object sender, EventArgs e)
+        private void Jump_button(object sender, EventArgs e)
         {
             JumpUp(Jumphigh);
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Land_button(object sender, EventArgs e)
         {
            JumpDown(Jumphigh);
         }
-        private void button7_Click(object sender, EventArgs e)
+        private void Speed_plus(object sender, EventArgs e)
         {
             Speed++;
             label4.Text = @"game Speed : " + Speed;
             _game.ColumnSpeed= Speed;
         }
-        private void button6_Click(object sender, EventArgs e)
+        private void Speed_minus(object sender, EventArgs e)
         {
             if(Speed>1)
             { 
@@ -111,13 +111,8 @@ namespace flapp
                 _game.ColumnSpeed= Speed;
             }
         }
-
-        private void Option_FormClosing(object sender, FormClosingEventArgs e)
-        {
-           
-        }
-
-        private void button9_Click(object sender, EventArgs e)
+        
+        private void JumpHigh_plus(object sender, EventArgs e)
         {
             if(Jumphigh<6)
             {
@@ -127,7 +122,7 @@ namespace flapp
             }
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void JumpHigh_minus(object sender, EventArgs e)
         {
             if(Jumphigh>1)
             {

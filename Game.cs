@@ -72,12 +72,12 @@ namespace flapp
                 playerPictureBox.Location = new Point(playerPictureBox.Location.X, 1);
             }
         }
-        private void timer1_Elapsed(object sender, ElapsedEventArgs e)
+        private void Game_loop(object sender, ElapsedEventArgs e)
         {
             frames_counter.Text = @"Cool : " + _gravityTime;
             Gravity(player);
-            UpColumn(colo_up);
-            DownColumn(colo_downn);
+            UpColumn_movement(colo_up);
+            DownColumn_movement(colo_downn);
             if (Crashing(player, colo_up) || Crashing(player, colo_downn))
             {
                 restart_button.Enabled = true;
@@ -114,7 +114,7 @@ namespace flapp
             scorelabel.Text = @"Score : " + _playerScore;
             Stages();
         }
-        private void UpColumn(PictureBox column)
+        private void UpColumn_movement(PictureBox column)
         {
             column.Left -= ColumnSpeed;
             if (column.Left < 0)
@@ -123,7 +123,7 @@ namespace flapp
                 ScorePointer();
             }
         }
-        private void DownColumn(PictureBox column )
+        private void DownColumn_movement(PictureBox column )
         {
             column.Left -= ColumnSpeed;
             if (column.Left < 0)
@@ -172,17 +172,17 @@ namespace flapp
         Game game = new Game();
         game.Show();
         }
-        private void button3_Click_2(object sender, EventArgs e)
+        private void Menu_button(object sender, EventArgs e)
         { 
             Close();
             Menu m = new Menu();
             m.Show();
         }
-        private void button1_Click_1(object sender, EventArgs e)
+        private void Restart_button(object sender, EventArgs e)
         {
             Restart();
         }
-        private void button2_Click_1(object sender, EventArgs e)
+        private void Option_button(object sender, EventArgs e)
         {
             Close();
             Option o = new Option();

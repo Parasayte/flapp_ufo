@@ -77,9 +77,8 @@ namespace flapp
             this.menu_start_button.TabIndex = 1;
             this.menu_start_button.Text = "Start";
             this.menu_start_button.UseVisualStyleBackColor = false;
-            this.menu_start_button.Click += new System.EventHandler(this.button2_Click);
-            this.menu_start_button.MouseEnter += new System.EventHandler(this.button2_MouseEnter);
-            this.menu_start_button.MouseLeave += new System.EventHandler(this.button2_MouseLeave);
+            this.menu_start_button.Click += new System.EventHandler(this.Menu_Start);
+           
             // 
             // fish
             // 
@@ -104,7 +103,7 @@ namespace flapp
             this.menu_option_button.TabIndex = 16;
             this.menu_option_button.Text = "Option";
             this.menu_option_button.UseVisualStyleBackColor = false;
-            this.menu_option_button.Click += new System.EventHandler(this.button3_Click_1);
+            this.menu_option_button.Click += new System.EventHandler(this.Menu_option_button);
             // 
             // label3
             // 
@@ -135,6 +134,7 @@ namespace flapp
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menu_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.fish)).EndInit();
             this.ResumeLayout(false);

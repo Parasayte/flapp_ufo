@@ -75,7 +75,7 @@ namespace flapp
             this.gravity_plus.TabIndex = 15;
             this.gravity_plus.Text = "+";
             this.gravity_plus.UseVisualStyleBackColor = false;
-            this.gravity_plus.Click += new System.EventHandler(this.button3_Click_1);
+            this.gravity_plus.Click += new System.EventHandler(this.Gravity_plus);
             // 
             // player_pictureBox
             // 
@@ -100,17 +100,17 @@ namespace flapp
             this.start_button.TabIndex = 17;
             this.start_button.Text = "Start";
             this.start_button.UseVisualStyleBackColor = false;
-            this.start_button.Click += new System.EventHandler(this.button2_Click_1);
+            this.start_button.Click += new System.EventHandler(this.Option_start_button);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Azonix", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(5, 279);
+            this.label2.Location = new System.Drawing.Point(12, 280);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(227, 34);
             this.label2.TabIndex = 18;
-            this.label2.Text = "|Use Arrow UP to Fly\r\nand Arrow Down to land??";
+            this.label2.Text = "|Use Arrow UP to jump\r\nand Arrow Down to land??";
             // 
             // label
             // 
@@ -135,7 +135,7 @@ namespace flapp
             this.gravity_minus.TabIndex = 20;
             this.gravity_minus.Text = "-";
             this.gravity_minus.UseVisualStyleBackColor = false;
-            this.gravity_minus.Click += new System.EventHandler(this.button4_Click_1);
+            this.gravity_minus.Click += new System.EventHandler(this.Gravity_minus);
             // 
             // fly_button
             // 
@@ -146,9 +146,9 @@ namespace flapp
             this.fly_button.Name = "fly_button";
             this.fly_button.Size = new System.Drawing.Size(77, 38);
             this.fly_button.TabIndex = 21;
-            this.fly_button.Text = "Fly\r\n";
+            this.fly_button.Text = "Jump";
             this.fly_button.UseVisualStyleBackColor = false;
-            this.fly_button.Click += new System.EventHandler(this.button5_Click_1);
+            this.fly_button.Click += new System.EventHandler(this.Jump_button);
             // 
             // label1
             // 
@@ -165,7 +165,7 @@ namespace flapp
             this.timer1.Enabled = true;
             this.timer1.Interval = 16D;
             this.timer1.SynchronizingObject = this;
-            this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
+            this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.Game_loop);
             // 
             // land_button
             // 
@@ -178,7 +178,7 @@ namespace flapp
             this.land_button.TabIndex = 23;
             this.land_button.Text = "Land";
             this.land_button.UseVisualStyleBackColor = false;
-            this.land_button.Click += new System.EventHandler(this.button1_Click);
+            this.land_button.Click += new System.EventHandler(this.Land_button);
             // 
             // game_speed_minus
             // 
@@ -191,7 +191,7 @@ namespace flapp
             this.game_speed_minus.TabIndex = 26;
             this.game_speed_minus.Text = "-";
             this.game_speed_minus.UseVisualStyleBackColor = false;
-            this.game_speed_minus.Click += new System.EventHandler(this.button6_Click);
+            this.game_speed_minus.Click += new System.EventHandler(this.Speed_minus);
             // 
             // label4
             // 
@@ -214,7 +214,7 @@ namespace flapp
             this.game_speed_plus.TabIndex = 25;
             this.game_speed_plus.Text = "+";
             this.game_speed_plus.UseVisualStyleBackColor = false;
-            this.game_speed_plus.Click += new System.EventHandler(this.button7_Click);
+            this.game_speed_plus.Click += new System.EventHandler(this.Speed_plus);
             // 
             // jump_high_minus
             // 
@@ -227,7 +227,7 @@ namespace flapp
             this.jump_high_minus.TabIndex = 29;
             this.jump_high_minus.Text = "-";
             this.jump_high_minus.UseVisualStyleBackColor = false;
-            this.jump_high_minus.Click += new System.EventHandler(this.button8_Click);
+            this.jump_high_minus.Click += new System.EventHandler(this.JumpHigh_minus);
             // 
             // label5
             // 
@@ -250,7 +250,7 @@ namespace flapp
             this.jump_high_plus.TabIndex = 28;
             this.jump_high_plus.Text = "+";
             this.jump_high_plus.UseVisualStyleBackColor = false;
-            this.jump_high_plus.Click += new System.EventHandler(this.button9_Click);
+            this.jump_high_plus.Click += new System.EventHandler(this.JumpHigh_plus);
             // 
             // Option
             // 
@@ -281,7 +281,7 @@ namespace flapp
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "Option";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Option_FormClosing);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.player_pictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.label)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();

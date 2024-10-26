@@ -50,7 +50,7 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 16D;
             this.timer1.SynchronizingObject = this;
-            this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Elapsed);
+            this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.Game_loop);
             // 
             // menu_button
             // 
@@ -64,7 +64,7 @@
             this.menu_button.Text = "Menu";
             this.menu_button.UseVisualStyleBackColor = false;
             this.menu_button.Visible = false;
-            this.menu_button.Click += new System.EventHandler(this.button3_Click_2);
+            this.menu_button.Click += new System.EventHandler(this.Menu_button);
             // 
             // colo_up
             // 
@@ -102,7 +102,7 @@
             this.option_button.Text = "Option";
             this.option_button.UseVisualStyleBackColor = false;
             this.option_button.Visible = false;
-            this.option_button.Click += new System.EventHandler(this.button2_Click_1);
+            this.option_button.Click += new System.EventHandler(this.Option_button);
             // 
             // restart_button
             // 
@@ -116,7 +116,7 @@
             this.restart_button.Text = "Restart";
             this.restart_button.UseVisualStyleBackColor = false;
             this.restart_button.Visible = false;
-            this.restart_button.Click += new System.EventHandler(this.button1_Click_1);
+            this.restart_button.Click += new System.EventHandler(this.Restart_button);
             // 
             // game_over
             // 
@@ -187,6 +187,7 @@
             this.Location = new System.Drawing.Point(15, 15);
             this.MaximizeBox = false;
             this.Name = "Game";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
             ((System.ComponentModel.ISupportInitialize)(this.timer1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colo_up)).EndInit();
