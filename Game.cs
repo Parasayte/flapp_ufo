@@ -119,7 +119,8 @@ namespace flapp
             {
                 player.Location = new Point(player.Location.X, 390);
             }
-            
+
+            _gravityTime = 0;
 
         }
         public void JumpUp(PictureBox player)
